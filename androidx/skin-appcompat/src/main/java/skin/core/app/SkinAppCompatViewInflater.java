@@ -25,6 +25,7 @@ import skin.core.widget.SkinCompatFrameLayout;
 import skin.core.widget.SkinCompatImageButton;
 import skin.core.widget.SkinCompatImageView;
 import skin.core.widget.SkinCompatLinearLayout;
+import skin.core.widget.SkinCompatLinearLayoutCompat;
 import skin.core.widget.SkinCompatMultiAutoCompleteTextView;
 import skin.core.widget.SkinCompatProgressBar;
 import skin.core.widget.SkinCompatRadioButton;
@@ -67,6 +68,9 @@ public class SkinAppCompatViewInflater implements SkinLayoutInflater, SkinWrappe
                 break;
             case "LinearLayout":
                 view = new SkinCompatLinearLayout(context, attrs);
+                break;
+            case "LinearLayoutCompat":
+                view = new SkinCompatLinearLayoutCompat(context, attrs);
                 break;
             case "RelativeLayout":
                 view = new SkinCompatRelativeLayout(context, attrs);
