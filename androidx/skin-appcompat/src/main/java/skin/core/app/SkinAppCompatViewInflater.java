@@ -69,9 +69,7 @@ public class SkinAppCompatViewInflater implements SkinLayoutInflater, SkinWrappe
             case "LinearLayout":
                 view = new SkinCompatLinearLayout(context, attrs);
                 break;
-            case "LinearLayoutCompat":
-                view = new SkinCompatLinearLayoutCompat(context, attrs);
-                break;
+
             case "RelativeLayout":
                 view = new SkinCompatRelativeLayout(context, attrs);
                 break;
@@ -137,6 +135,9 @@ public class SkinAppCompatViewInflater implements SkinLayoutInflater, SkinWrappe
         switch (name) {
             case "androidx.appcompat.widget.Toolbar":
                 view = new SkinCompatToolbar(context, attrs);
+                break;
+            case "androidx.appcompat.widget.LinearLayoutCompat":
+                view = new SkinCompatLinearLayoutCompat(context, attrs);
                 break;
             default:
                 break;
